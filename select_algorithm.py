@@ -15,8 +15,7 @@ def random_array(size=ARRAY_SIZE, start=MIN_ARRAY_VAL,end=MAX_ARRAY_VAL):
 
 def partial_sort(array, start, end):
     # sort the part array[start:end+1] (as to include both start and end index)
-    tmp =  sorted(array[start:end+1])
-    array[start:end+1] = tmp
+    array[start:end+1] = sorted(array[start:end+1])
 
 
 def check_if_sorted(array):
